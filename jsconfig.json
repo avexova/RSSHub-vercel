@@ -2,7 +2,27 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@/*": ["./lib/*"]
+            "#config": ["./lib/config.js"],
+            "#errors": ["./lib/errors/index.js"],
+            "#cf-email": ["./lib/utils/cf-mail.js"],
+            "#common-config": ["./lib/utils/common-config.js"],
+            "#common-utils": ["./lib/utils/common-utils.js"],
+            "#date": ["./lib/utils/date.js"],
+            "#dateParser": ["./lib/utils/dateParser.js"],
+            "#got": ["./lib/utils/got.js"],
+            "#logger": ["./lib/utils/logger.js"],
+            "#md5": ["./lib/utils/md5.js"],
+            "#parse-date": ["./lib/utils/parse-date.js"],
+            "#puppeteer": ["./lib/utils/puppeteer.js"],
+            "#rand-user-agent": ["./lib/utils/rand-user-agent.js"],
+            "#readable-social": ["./lib/utils/readable-social.js"],
+            "#render": ["./lib/utils/render.js"],
+            "#request-wrapper": ["./lib/utils/request-wrapper.js"],
+            "#rss-parser": ["./lib/utils/rss-parser.js"],
+            "#timezone": ["./lib/utils/rss-parser.js"],
+            "#torrent": ["./lib/utils/torrent.js"],
+            "#wait": ["./lib/utils/wait.js"],
+            "#wechat-mp": ["./lib/utils/wechat-mp.js"]
         }
     },
     "include": ["./lib/**/*"]

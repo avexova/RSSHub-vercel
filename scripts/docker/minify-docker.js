@@ -20,10 +20,10 @@ const files = [/* 'lib/index.js',*/ 'api/vercel.js'].map((file) => path.join(pro
     console.log('Total files need to be copied (touchable files in node_modules/):', fileList.length);
     console.log('Start copying files, destination:', resultFolder);
     return Promise.all(
-        fileList.map((e) => {
-            return '';
+        fileList.map((e) =>
+             ''
             // fs.copy(path.join(projectRoot, e), path.join(resultFolder, e));
-        })
+        )
     );
 })().catch((err) => {
     // fix unhandled promise rejections

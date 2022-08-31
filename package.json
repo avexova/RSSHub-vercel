@@ -31,9 +31,6 @@
   "keywords": [
     "RSS"
   ],
-  "gitHooks": {
-    "pre-commit": "npm run format:staged"
-  },
   "author": "DIYgod",
   "license": "MIT",
   "bugs": {
@@ -116,7 +113,6 @@
     "lz-string": "1.4.4",
     "mailparser": "3.5.0",
     "markdown-it": "13.0.1",
-    "module-alias": "2.2.2",
     "parse-torrent": "9.1.5",
     "pidusage": "3.0.0",
     "plist": "3.0.6",
@@ -162,7 +158,27 @@
     "bail": true,
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "@/(.*)": "<rootDir>/lib/$1"
+      "#config": "<rootDir>/lib/config.js",
+      "#errors": "<rootDir>/lib/errors/index.js",
+      "#cf-email": "<rootDir>/lib/utils/cf-mail.js",
+      "#common-config": "<rootDir>/lib/utils/common-config.js",
+      "#common-utils": "<rootDir>/lib/utils/common-utils.js",
+      "#date": "<rootDir>/lib/utils/date.js",
+      "#dateParser": "<rootDir>/lib/utils/dateParser.js",
+      "#got": "<rootDir>/lib/utils/got.js",
+      "#logger": "<rootDir>/lib/utils/logger.js",
+      "#md5": "<rootDir>/lib/utils/md5.js",
+      "#parse-date": "<rootDir>/lib/utils/parse-date.js",
+      "#puppeteer": "<rootDir>/lib/utils/puppeteer.js",
+      "#rand-user-agent": "<rootDir>/lib/utils/rand-user-agent.js",
+      "#readable-social": "<rootDir>/lib/utils/readable-social.js",
+      "#render": "<rootDir>/lib/utils/render.js",
+      "#request-wrapper": "<rootDir>/lib/utils/request-wrapper.js",
+      "#rss-parser": "<rootDir>/lib/utils/rss-parser.js",
+      "#timezone": "<rootDir>/lib/utils/timezone.js",
+      "#torrent": "<rootDir>/lib/utils/torrent.js",
+      "#wait": "<rootDir>/lib/utils/wait.js",
+      "#wechat-mp": "<rootDir>/lib/utils/wechat-mp.js"
     }
   },
   "nodemonConfig": {
@@ -175,5 +191,28 @@
   },
   "engines": {
     "node": ">=14"
+  },
+  "imports": {
+    "#config": "./lib/config.js",
+    "#errors": "./lib/errors/index.js",
+    "#cf-email": "./lib/utils/cf-mail.js",
+    "#common-config": "./lib/utils/common-config.js",
+    "#common-utils": "./lib/utils/common-utils.js",
+    "#date": "./lib/utils/date.js",
+    "#dateParser": "./lib/utils/dateParser.js",
+    "#got": "./lib/utils/got.js",
+    "#logger": "./lib/utils/logger.js",
+    "#md5": "./lib/utils/md5.js",
+    "#parse-date": "./lib/utils/parse-date.js",
+    "#puppeteer": "./lib/utils/puppeteer.js",
+    "#rand-user-agent": "./lib/utils/rand-user-agent.js",
+    "#readable-social": "./lib/utils/readable-social.js",
+    "#render": "./lib/utils/render.js",
+    "#request-wrapper": "./lib/utils/request-wrapper.js",
+    "#rss-parser": "./lib/utils/rss-parser.js",
+    "#timezone": "./lib/utils/rss-parser.js",
+    "#torrent": "./lib/utils/torrent.js",
+    "#wait": "./lib/utils/wait.js",
+    "#wechat-mp": "./lib/utils/wechat-mp.js"
   }
 }
